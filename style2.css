@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+h1, p, .sidebar, .copyright {
+    font-family: "Nunito", sans-serif;
+}
+
+header {
+    grid-area: header;
+    background-color: #dcdcdc;
+    text-align: center;
+    padding: 5px;
+}
+  
+article {
+    grid-area: content;
+    background-color: #f4f0ec;
+    padding: 20px;
+}
+
+img {
+    width: 60%;
+    border-radius: 15px;
+}
+.image {
+    width: 80%;
+    height: auto;
+    border: 3px solid #ccc;
+    background: #eee;
+    margin: auto;
+    padding: 15px 10px;
+}
+  
+aside {
+    grid-area: sidebar;
+    background-color: #e5e4e2;
+}
+  
+footer {
+    padding: 5px;
+    grid-area: footer;
+    background-color: #dcdcdc;
+}
+  
+.wrapper {
+    display: grid;
+    grid-template-rows: 1fr 92% 1fr;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+      "header  header"
+      "sidebar content"
+      "footer  footer";
+}
+  
+@media (max-width: 768px) {
+    .wrapper {
+      grid-template-columns: 4fr;
+      grid-template-areas:
+        "header"
+        "content"
+        "sidebar"
+        "footer";
+    }
+}

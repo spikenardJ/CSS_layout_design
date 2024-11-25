@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:wght@400;700&display=swap');
+
+body {
+    background-color: rgb(238, 243, 247);
+}
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+#nav1, #nav2, #nav3 {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    font-family: "Bona Nova SC", sans-serif;
+    font-size: larger;
+    text-shadow: 0 1px 1px rgb(232, 197, 43);
+    color: rgb(40, 63, 106);
+    text-decoration: none;
+    transition: transform .4s;
+}
+
+#nav1:hover, #nav1:focus, #nav2:hover, #nav2:focus, #nav3:hover, #nav3:focus {
+    color:rgb(251, 199, 69);
+    transform: scale(1.5);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    background-image: url("images/martin-adams-MpTdvXlAsVE-unsplash.jpg");
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: rgb(40, 63, 106);
+    font-family: "Bona Nova SC", sans-serif;
+    text-shadow: 0 1px 1px rgb(232, 197, 43);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    background-image: url("images/falling-petals.gif");
+}
+
+#logo, .logo {
+    position: absolute;
+    display: flex;
+    width: 16%;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+img {
+    max-width: 60%;
+    border: 2px double rgb(232, 197, 43);
+    border-radius: 20px;
+    flex-grow: 1;
+
+}
+
+.image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    font-family: "Bona Nova SC", sans-serif;
+    text-shadow: 0 1px 1px rgb(232, 197, 43);
+    color: rgb(40, 63, 106);
+    text-decoration: none;
+    transition: transform .4s;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.contact, .newsletter, .benefits {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    font-family: "Bona Nova SC", sans-serif;
+    text-shadow: 0 1px 1px rgb(232, 197, 43);
+    color: rgb(40, 63, 106);
+    text-decoration: none;
+    transition: transform .4s;
+}
+
+.contact:hover, .contact:focus, .newsletter:hover, .newsletter:focus, .benefits:hover, .benefits:focus {
+    color:rgb(251, 199, 69);
+    transform: scale(1.5);
+}
+
+#top {
+    text-decoration: none;
+}
+
+p {
+    color: rgb(40, 63, 106);
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+}
+
+.products ul li{
+    align-items: center;
+    list-style-position: inside;
+    list-style-type: square;
+}
+
+.copyright {
+    color: rgb(40, 63, 106);
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 600px){
+    .navigation, .footer {
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+    }
+}
